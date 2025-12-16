@@ -9,15 +9,9 @@ import java.time.format.DateTimeFormatter;
 @Component
 public class Timer {
 
-    private final LocalTime time;
-    private static final DateTimeFormatter FORMATTER =
-            DateTimeFormatter.ofPattern("HH:mm:ss");
+    private final Long time = 0L;
 
-    public Timer() {
-        this.time = LocalTime.now();
-    }
-
-    public String getTime() {
-        return time.format(FORMATTER);
+    public long getTime() {
+        return time;
     }
 }

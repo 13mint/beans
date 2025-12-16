@@ -1,6 +1,5 @@
 package app.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
@@ -20,8 +19,9 @@ public class AnimalsCage {
         animal.makeSound();
     }
 
-    public void showTime(){
+    public Object showTime(){
         System.out.println("Time: " + timer.getTime());
         System.out.println("--------------");
+        return timer.getTime();
     }
 }
