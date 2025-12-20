@@ -19,9 +19,9 @@ public class AnimalsCage {
         animal.makeSound();
     }
 
-    public Object showTime(){
+    public Timer getTimer(){
         System.out.println("Time: " + timer.getTime());
         System.out.println("--------------");
-        return timer.getTime();
+        return timer;
     }
 }

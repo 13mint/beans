@@ -24,10 +24,10 @@ public class MainTest {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             if (i == 0) {
-                bean.showTime();
+                time = bean.getTimer().getTime();
                 continue;
             }
-            Assert.assertEquals("Test failed, incorrect bean implementation.", time, bean.showTime());
+            Assert.assertEquals("Test failed, incorrect bean implementation.", time, bean.getTimer().getTime());
             System.out.println(time);
         }
     }

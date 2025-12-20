@@ -9,9 +9,9 @@ import java.time.format.DateTimeFormatter;
 @Component
 public class Timer {
 
-    private final Long time = 0L;
+    private Long nanoTime = System.nanoTime();
 
     public long getTime() {
-        return time;
+        return nanoTime;
     }
 }
